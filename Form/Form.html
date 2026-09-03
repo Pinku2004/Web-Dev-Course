@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Form for TA</h2>
+    <form method="post"> 
+        <div>
+        <label for="demo">Enter your username:</label>
+        <input type="text" id="demo" name="username" placeholder="Enter your username" autofocus>
+        </div>
+        <div>
+        <input type="checkbox" id="male" name="gender" value="male" >
+        <label for="male">Male</label>
+        <input type="checkbox" id="female" name="gender" value="female" >
+        <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label><br>
+            <textarea id="comment" name="textarea" rows="10"cols="50">Write your comment here...</textarea>
+        </div>
+        <div>
+            <select name="select">
+                <option value="cars">Cars</option>
+                <option value="bus">Bus</option>
+                <option value="Plane">Plane</option>
+            </select>
+        </div>
+        <div id="firstdiv" class="red bg-yellow">FirstDiv</div>
+        <div id="seconddiv" >SecondDiv</div>
+        <span class = "red">Hey I am span</span>
+    </form>
+</body>
+</html>
