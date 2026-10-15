@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+        body{
+            font-family:"Segoe UI";
+            font-size:12px;
+        }
+        .logo img{
+            display:flex;
+            cursor:pointer;
+        }
+        nav{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+        }
+        .right ul{
+            display:flex;
+            gap:30px;
+            list-style:none;
+            cursor: pointer;
+        }
+        .right ul li img{
+            padding:0 2px;
+        }
+        .body{
+            display:grid;
+            grid-template-columns: 270px 270px 270px;
+            justify-content: center;
+            margin:50px;
+        }
+        .first{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:25px;
+            margin:25px;
+        }
+        .first span{
+            font-size:23px;
+        }
+        .first p{
+            font-size:13px;
+            width:35vw;
+            text-align: center;
+        }
+        .box{
+            width:250px;
+            height:120px;
+            background-color: rgb(216, 213, 213);
+            margin:10px;
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pad{
+            padding-bottom: 20px;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:10px;
+        }
+        .buttons{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:5px;
+        }
+        .btn{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        button{
+            border-radius:5px;
+            font-size:9px;
+            padding:7px;
+            cursor:pointer;
+            border:none;
+            background-color: #00b6d1;
+            color:white;
+        }
+        @media screen and (max-width:450px){
+            .body{
+                display:flex;
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="logo.png"><img src="logo.png" width="130px" height="50px"></a></div>
+            <div class="right">
+                <ul>
+                    <li>Products<img src="down-arrow.png" width="12px"></li>
+                    <li>Pricing<img src="down-arrow.png" width="12px"></li>
+                    <li>Resources<img src="down-arrow.png" width="12px"></li>
+                    <li>About Us<img src="down-arrow.png" width="12px"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <span>Download <b>UltraEdit</b> for Windows</span>
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor</p>
+            <div class="btn">
+                <button > DOWNLOAD MAC OR LINUX VERSION</button>
+            </div>
+        </section>
+        <section class="body">
+        <div class="box box1">
+            <h3 class="pad">English</h3>
+            <div class="buttons">
+            <button style="background-color: #00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+            </div>
+        <div class="box box2">
+            <h3>Deutsch</h3>
+            <p>German</p>
+            <div class="buttons">
+            <button style="background-color:#00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        <div class="box box3">
+            <h3>Italiano</h3>
+            <p>Italian</p>
+            <div class="buttons">
+                <button style="background-color:#00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        <div class="box box4">
+            <h3>Español</h3>
+            <p>Spanish</p>
+            <div class="buttons">
+                <button style="background-color: #00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        <div class="box box5">
+            <h3>français</h3>
+            <p>French</p>
+            <div class="buttons">
+                <button style="background-color:#00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        <div class="box box6">
+            <h3>Portugues brasileiro</h3>
+            <p>Brazlian Portuguese</p>
+            <div class="buttons">
+                <button style="background-color:#00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        <div class="box box7">
+            <h3>日本</h3>
+            <p>Japanese</p>
+            <div class="buttons">
+                <button style="background-color:#00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        <div class="box box8">
+            <h3>한국어</h3>
+            <p>Korean</p>
+            <div class="buttons">
+                <button style="background-color:#00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        <div class="box box9">
+            <h3>中国</h3>
+            <p>Chinese</p>
+            <div class="buttons">
+                <button style="background-color:#00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        <div class="box box10">
+            <h3>中国</h3>
+            <p>Traditional Chinese</p>
+            <div class="buttons">
+                <button style="background-color:#00b6d1;color:white;">Download 32-bit</button>
+            <button style="background-color: rgb(38, 157, 38);color:white;">Download 64-bit</button>
+        </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

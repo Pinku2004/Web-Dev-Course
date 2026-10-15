@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Fit and Object-Position</title>
+    <style>
+        .container{
+            width:400px;
+            height:300px;
+            border:2px solid black;
+            background-color: azure;
+            background-image: url(car.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+        } 
+        img{
+            width:300px;
+            height:250px;
+            object-fit:scale-down; 
+            object-position:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="car.jpg"> -->
+    </div>
+</body>
+</html>

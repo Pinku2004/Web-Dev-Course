@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image:url(Assets/Images/bg.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height:80vh;
+    position: relative;
+    
+}
+.main .box{
+    background-color: black;
+    opacity:0.6;
+    height:80vh;
+    width:100%;
+    position: absolute;
+    top:0;
+}
+nav{
+    max-width: 80vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto;
+    position: relative;
+    z-index:10;
+    padding: 15px;
+}
+.btn{
+    display: flex;
+    gap:10px;
+}
+.btn1{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.btn2{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color:white;
+    font-size: 14px;
+    font-weight:550;
+    cursor:pointer;
+}
+.btn1 img {
+    filter: invert(1);
+    display:flex;
+    justify-content: left;
+    align-items: start;
+}
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    height:100%;
+    position: relative;
+    z-index: 10;
+    gap:20px;
+}
+.hero> :nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight:400;
+    font-size:24px;
+    text-align: center;
+}
+.hero> :nth-last-child{
+    font-size:20px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero1{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+.hero1 .input{
+    background-color: black;
+    opacity: 0.6;
+    border:1px solid white;
+    padding:10px 70px;
+    border-radius: 5px;
+}
+.hero1 .red{
+    background-color: red;
+    font-size:23px;
+    padding:10px 30px;
+    border-radius:5px;
+    color:white;
+    cursor: pointer;
+}
+.hero1 .input::placeholder{
+    color:white;
+    z-index: 10;
+    font-size: 15px;
+    position:absolute;
+    left:15px;
+}
+
+@media only screen and (max-width:400px){
+    nav{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .btn1{
+
+    }
+}

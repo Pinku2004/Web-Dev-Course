@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            width:30vw;
+            height:80vh;
+            background-color: rgb(33, 109, 109);
+        }
+        .box{
+            width:40px;
+            height:80px;
+            background-color:aqua;
+            /* animation-name:pinku;
+            animation-duration: 3s;
+            animation-iteration-count: 4;
+            animation-delay: 1s;
+            animation-direction:alternate-reverse;
+            animation-play-state:paused; */
+            animation:pinku 4s ease-out 1s 2,
+                      pinku2 5s ease-in 1s 1;
+            
+        }
+
+        @keyframes pinku{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform:translateX(1000px);
+            }
+        }
+        @keyframes pinku2{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            40%{
+                transform: rotate(250deg);
+            }
+            60%{
+                transform: rotate(300deg);
+            }
+            80%{
+                transform: rotate(350deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

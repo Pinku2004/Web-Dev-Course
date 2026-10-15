@@ -1,0 +1,32 @@
+:root{
+    --color:rgb(4, 64, 30);
+    --seccolor:rgb(201, 249, 241);
+    --textcolor:white;
+    --hover:black;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:var(--seccolor);
+}
+ul li{
+    list-style:none;
+    padding:10px;
+    margin:5px;
+    cursor:pointer;
+}
+ul li a{
+    color:var(--textcolor);
+    text-decoration: none;
+    
+}
+ul li a:hover{
+    color:var(--hover);
+}
+nav ul{
+    display:flex;
+    background-color: var(--color);
+    color:var(--textcolor);
+}
